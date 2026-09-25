@@ -1,0 +1,18 @@
+
+
+
+@mixin responsive($medida) {
+    @media (min-width: $medida) {
+        @content;
+    }
+}
+
+
+
+
+
+%imagen-destacada {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../styles/styles.css">
+    
+</head>
+
+<body>
+
+    <header>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="../index.html">
+            <img class="logo" src="../imagenes/LogoCafBre.png" alt="Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Abrir menú">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link link-destacado" href="menu.html">Menú</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="cursos.html">Cursos de cocina</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+        <h1>Contáctate con <span>nosotros</span></h1>
+        <!--Header es la cabecera-->
+        <!--Otro comentario, se crean con menos, exclamación, menos menos y se cierra sólo-->
+        <!--h1 es el título principal de la página. Sólo se puede poner una vez.-->
+        <p>Si tienes dudas o sugerencias, escríbenos a través de nuestro formulario de contacto</p>
+
+    </header>
+
+
+
+
+    <main>
+        <section class="introduccion">
+        <h2>Formulario de contacto</h2>
+        <h3>Completa los datos a continuación:</h3>
+
+        </section>
+
+
+        <form class="flex-contacto">
+
+            <div class="box" id="box1">
+            <fieldset>
+
+                <legend class="box-titulo">Datos de usuario</legend>
+
+                <label for="form-name">Nombre</label>
+                <input class="form-control" type="text" id="form-name" placeholder="Escriba su nombre" required>
+
+                <label for="form-surname">Apellido</label>
+                <input class="form-control" type="text" id="form-surname" placeholder="Escriba su apellido" required>
+
+            </fieldset>
+            </div>
+
+            <div class="box" id="box2">
+            <fieldset>
+
+                <legend class="box-titulo">Correo y contraseña</legend>
+
+                <label for="form-correoelectronico">Correo Electronico</label>
+                <input class="form-control" type="email" id="form-correoelectronico" placeholder="Escriba su correo" required>
+
+                <label for="form-pass">Contraseña</label>
+                <input class="form-control" type="password" id="form-pass" placeholder="Escriba su contraseña" required>
+                <!--Esto de correo y contraseña no tiene nada que ver con la cafetería pero lo dejé para recordar cómo se hace-->
+
+            </fieldset>
+            </div>
+
+            <div class="box" id="box3">
+            <fieldset>
+
+                <legend class="box-titulo">Productos que he probado</legend>
+
+                <input type="checkbox" id="check-brownie">
+                <label for="check-brownie">Brownie</label>
+
+                <input type="checkbox" id="check-sanswich">
+                <label for="check-sanswich">Sandwich</label>
+
+                <input type="checkbox" id="check-expresso">
+                <label for="check-expresso">Expresso</label>
+
+                <input type="checkbox" id="check-milkshake">
+                <label for="check-milkshake">Milkshake</label>
+
+            </fieldset>
+            </div>
+            
+            <div class="box" id="box4">
+            <fieldset>
+
+                <legend class="box-titulo">Elija una sola opción</legend>
+
+                <input type="radio" id="form-radio1" name="opcionUnica">
+                <label for="form-radio1">Felicitaciones</label>
+
+
+                <input type="radio" id="form-radio2" name="opcionUnica">
+                <label for="form-radio2">Reclamos</label>
+
+                <input type="radio" id="form-radio3" name="opcionUnica">
+                <label for="form-radio3">Sugerencias</label>
+
+            </fieldset>
+            </div>
+
+
+            <div class="box" id="box5">
+            <fieldset>
+
+                <legend class="box-titulo">Elija una sucursal</legend>
+
+                <select class="form-select" name="sucursal" id="sucursal">
+                    <option value="santiago">Santiago</option>
+                    <option value="concepcion">Concepción</option>
+                    <option value="iquique">Iquique</option>
+                    <option value="algarrobo">Algarrobo</option>
+                    <option value="vina">Viña</option>
+                </select>
+
+            </fieldset>
+            </div>
+
+            <div class="box" id="box6">
+            <input class="btn btn-success" type="submit" value="Enviar">
+            </div>
+
+
+        </form>
+    </main>
+
+
+    <footer>
+
+        <div class="contenedor-footer">
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li> <a href="http://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li> <a href="http://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li> <a href="http://www.youtube.com" target="_blank">Youtube</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Mis datos</h3>
+                <ul>
+                    <li>Iniciar sesion</li>
+                    <li>Registrarse</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="info-footer">
+            <p>Copyright - 2026 Bredize Quintana</p>
+            <p>Santiago de Chile 123</p>
+            <p>Horarios: Sábados de 11:00 a 13:00</p>
+        </div>
+
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

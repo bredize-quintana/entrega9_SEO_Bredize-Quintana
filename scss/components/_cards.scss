@@ -1,0 +1,114 @@
+
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+.introduccion {
+    display: flex;
+    margin: 20;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+
+
+.titulo-seccion {
+    padding: 20px;
+}
+
+
+.productosdestacados {
+    img {
+        @extend %imagen-destacada;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+
+.promos {
+    img {
+        @extend %imagen-destacada;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+
+
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 40px;
+}
+
+.contenedor-comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+    article {
+        flex: 1;
+    }
+}
+
+.pagina-contenido {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    article {
+        display: inline-block;
+        margin: 20px;
+        vertical-align: top;
+    }
+
+    img {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    figcaption {
+        margin-top: 10px;
+        font-weight: 500;
+    }
+}
+
+
+
+@include responsive($breakpoint-tablet) {
+    .contenedor-comentarios {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contenedor-comentarios article {
+        width: 45%;
+    }
+}
+
+
+@include responsive($breakpoint-desktop) {
+    .contenedor-comentarios {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

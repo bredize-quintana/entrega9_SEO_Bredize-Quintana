@@ -1,0 +1,19 @@
+@use "../utilities/variables" as *;
+
+// Regla universal contenedores
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente-principal;
+}
+ 
+
+main {
+    background-color: $color-fondo-main;
+    margin-bottom: 5px;
+}

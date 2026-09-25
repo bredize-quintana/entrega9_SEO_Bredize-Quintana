@@ -1,0 +1,57 @@
+@use "../utilities/variables" as *;
+
+h1 {
+    font-family: $fuente-principal;
+    color: $color-texto-principal;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-family: $fuente-principal;
+    color: $color-secundario;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+h3,
+p {
+    font-family: $fuente-principal;
+    color: $color-texto-principal;
+    font-weight: 500;
+    font-style: italic;
+}
+
+h4 {
+    font-family: $fuente-principal;
+    color: $color-texto-principal;
+    font-weight: 400;
+    font-style: italic;
+}
+
+p {
+    font-family: $fuente-principal;
+    font-size: small;
+    font-style: normal;
+}
+
+li {
+    color: $color-texto-suave;
+    font-weight: 200;
+    list-style: none;
+}
+
+span {
+    color: $color-verde;
+}
+
+a {
+    color: $color-texto-principal;
+    text-decoration: none;
+}
+
+.link-destacado {
+    font-weight: 700;
+}

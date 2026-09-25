@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    
+    <title>Menú</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    </head>
+
+<body>
+
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="imagenes/LogoCafBre.png" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-destacado" href="pages/menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/cursos.html">Cursos de cocina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+<main>
+    <div class="row">
+
+        <section class="introduccion">
+            <h2 class="animate__animated animate__fadeInDown">
+                Bienvenido a tu cafetería vegana de barrio
+            </h2>
+            <!-- titulo para secciones-->
+            <h3>Para servir y llevar<br>Disponible también a domicilio</h3>
+            <!--titulo para secciones pequeñas, cards, etc-->
+        </section>
+
+            <section class="galeria col-12">
+
+                <h2 class="titulo-seccion">Nuestra cafetería</h2>
+
+                <div id="carouselCafeteria" class="carousel slide">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="imagenes/cafes.jpeg" class="d-block w-100" alt="Variedad de cafés">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="imagenes/carrot_cake.jpeg" class="d-block w-100" alt="Carrot cake vegano">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="imagenes/cheescake.jpeg" class="d-block w-100" alt="Cheesecake vegano">
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCafeteria"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCafeteria"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <section class="productosdestacados col-12">
+
+                <h2 class="titulo-seccion">Productos destacados:</h2>
+
+                <div class="row">
+
+
+                    <article class="caja-producto1 col-12 col-lg-4 text-center">
+                        <figure>
+                            <img src="imagenes/café.webp" alt="Café expresso">
+                            <figcaption>Café expresso</figcaption>
+                        </figure>
+                        <h3>Café expresso</h3>
+                        <p>$2.500</p>
+                    </article>
+
+
+                    <article class="caja-producto2 col-12 col-lg-4 text-center">
+                        <figure>
+                            <img src="imagenes/brownie.jpeg" alt="Brownie chocolate">
+                            <figcaption>Brownie de chocolate</figcaption>
+                        </figure>
+                        <h3>Brownie chocolate</h3>
+                        <p>$3.000</p>
+                    </article>
+
+
+                    <article class="caja-producto3 col-12 col-lg-4 text-center">
+                        <figure>
+                            <img src="imagenes/sandwich.jpg" alt="Sandwich">
+                            <figcaption>Sandwich de verduras</figcaption>
+                        </figure>
+                        <h3>Sandwich</h3>
+                        <p>$4.300</p>
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+
+            <section class="seccion-promociones col-12">
+
+                <h2 class="titulo-seccion">Promociones:</h2>
+
+                <section class="promos row">
+
+                    <article class="promo1 col-12 col-lg-6 text-center">
+                        <figure>
+                            <img src="imagenes/promo1.webp" alt="Café con media luna">
+                            <figcaption>Café + media luna</figcaption>
+                        </figure>
+                        <h3>Café + media luna</h3>
+                        <p>$5.000</p>
+                    </article>
+
+
+                    <article class="promo2 col-12 col-lg-6 text-center">
+                        <figure>
+                            <img src="imagenes/promo2.jpg" alt="Café con brownie">
+                            <figcaption>Café + brownie de chocolate</figcaption>
+                        </figure>
+                        <h3>Café + Brownie chocolate</h3>
+                        <p>$5.000</p>
+                    </article>
+
+
+                </section>
+
+            </section>
+
+            <section class="comentarios">
+
+                <h2 class="titulo-seccion">Comentarios de nuestros clientes:</h2>
+
+                <div class="contenedor-comentarios">
+
+                    <article>
+                        <h4>Muy bueno todo!</h4>
+                        <p>Camila Rojas</p>
+                    </article>
+
+                    <article>
+                        <h4>Muy rico todo. Soy celiaca y tuvieron mucha paciencia explicándome los platos.</h4>
+                        <p>Rosario Gana</p>
+                    </article>
+
+                    <article>
+                        <h4>Me sentí muy cómoda yendo con mi perrito, son pet friendly</h4>
+                        <p>Javiera Villegas</p>
+                    </article>
+
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="contenedor-footer">
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li> <a href="http://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li> <a href="http://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li> <a href="http://www.youtube.com" target="_blank">Youtube</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Mis datos</h3>
+                <ul>
+                    <li>Iniciar sesion</li>
+                    <li>Registrarse</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="info-footer">
+            <p>Copyright - 2026 Bredize Quintana</p>
+            <p>Santiago de Chile 123</p>
+            <p>Horarios: Sábados de 11:00 a 13:00</p>
+        </div>
+
+
+
+
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

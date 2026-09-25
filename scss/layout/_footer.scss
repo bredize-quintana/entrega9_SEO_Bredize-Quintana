@@ -1,0 +1,36 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+footer {
+    background-color: $color-footer;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 30px;
+}
+
+@include responsive($breakpoint-desktop) {
+    .contenedor-footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .info-footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
